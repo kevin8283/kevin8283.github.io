@@ -8,7 +8,10 @@ export default function Todo({todoKey, todo, deleteTodo, handleDoubleClick, isEd
   }
 
   return (
-    <li className="todo" onDoubleClick={() => {handleDoubleClick(todoKey)}}>
+    <li 
+      className="todo" 
+      onDoubleClick={() => {handleDoubleClick(todoKey)}}
+    >
         <span>{todo}</span>
         <span><button onClick={() => deleteTodo(todoKey)} className="button-submit delete">Delete</button></span>
     </li>
